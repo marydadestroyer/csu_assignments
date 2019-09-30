@@ -11,8 +11,9 @@ function config($key = '')
         'pretty_uri' => false,
         'site_url' => 'https://csu_assignments.herokuapp.com',
         'nav_menu' => [
-            'home' => 'Home'
-            
+            '' => 'Home',
+            'page2' => 'Page 2'
+
         ],
         'template_path' => 'template',
         'content_path' => 'content',
