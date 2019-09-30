@@ -20,7 +20,12 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#page2">page 2</a>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Page 2</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
 
     </div>
   </div>
