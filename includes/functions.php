@@ -63,7 +63,7 @@ function page_content()
 Stuff
 */
 function getComicPicture(){
-$url = 'http://xkcd.com/info.0.json';
+$url = 'http://xkcd.com/614/info.0.json';
 /**dont change
 */
 $handle = curl_init();
@@ -79,6 +79,10 @@ $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
+echo '<h2>' . $response["title"] . '</h2>';
+echo '<br>';
+echo '<h3>' . $response["year"] . '</h3>';
+echo '<br>';
 }
 
 
