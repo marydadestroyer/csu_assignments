@@ -81,7 +81,7 @@ curl_close($handle);
 */
 }
 
-}
+
 
 /**
  * Starts everything and displays the template.
