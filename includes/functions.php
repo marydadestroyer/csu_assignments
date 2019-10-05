@@ -23,7 +23,7 @@ function site_version()
 /**
  * Website navigation.
  */
-function nav_menu($sep = ' | ')
+function nav_menu($sep = ' * ')
 {
     $nav_menu = '';
     $nav_items = config('nav_menu');
@@ -58,6 +58,31 @@ function page_content()
     }
     echo file_get_contents($path);
 }
+
+/*
+Stuff
+*/
+function getComicPicture(){
+$url = http://xkcd.com/info.0.json;
+/**dont change
+*/
+$handle = curl_init();
+curl_setopt($handle, CURLOPT_URL, $url);
+curl_setopt_array($handle,
+array(
+CURLOPT_URL => $url,
+CURLOPT_RETURNTRANSFER => true
+)
+);
+$output = curl_exec($handle);
+$response = json_decode($output, true);
+curl_close($handle);
+/*dont change
+*/
+}
+
+}
+
 /**
  * Starts everything and displays the template.
  */

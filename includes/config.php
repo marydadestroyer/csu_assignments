@@ -7,12 +7,12 @@
 function config($key = '')
 {
     $config = [
-        'name' => 'csu_assignments',
+        'name' => 'Assignment 2',
         'pretty_uri' => false,
         'site_url' => 'https://assignment2csu.herokuapp.com',
         'nav_menu' => [
             '' => 'Home',
-            'page2' => 'Page 2'
+            'page2' => 'More Comics'
 
         ],
         'template_path' => 'template',
