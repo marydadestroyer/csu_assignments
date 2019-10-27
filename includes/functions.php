@@ -60,9 +60,6 @@ function page_content()
     require config('config_path'). $path;
 }
 
-/*
-Stuff
-*/
 
 /**
  * Starts everything and displays the template.
@@ -93,7 +90,6 @@ curl_close($handle);
 echo '<div><h2>' . $response["title"] . '</h2></div>';
 echo '<br>';
 echo '<h4>' . $response["month"] . '*' . $response["day"] . '/'. $response["year"] . '</h4>';
-echo '<br>';
 echo  '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
 }
 
