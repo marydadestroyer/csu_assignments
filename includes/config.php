@@ -11,7 +11,7 @@ function config($key = '')
         'pretty_uri' => false,
         'site_url' => 'https://assignment2csu.herokuapp.com',
         'nav_menu' => [
-            '' => 'Home',
+            '' => 'Comic Home',
             'page2' => 'More Comics'
 
         ],
