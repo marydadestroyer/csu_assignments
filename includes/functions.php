@@ -92,7 +92,7 @@ curl_close($handle);
 */
 echo '<div><h2>' . $response["title"] . '</h2></div>';
 echo '<br>';
-echo '<h4>' . $response["year"] . '-' . $response["month"] . '-' . $response["day"]. '</h4>';
+echo '<h4>' . $response["month"] . '/' . $response["day"] . '/'. $response["year"] . '</h4>';
 echo '<br>';
 echo  '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
 }
@@ -118,7 +118,7 @@ function getRandomComic(){
     */
     echo '<div><h2>' . $response["title"] . '</h2></div>';
     echo '<br>';
-    echo '<h4>' . $response["year"] . '-' . $response["month"] . '-' . $response["day"].'</h4>';
+    echo '<h4>' . $response["month"] . '/' . $response["day"] . '/'. $response["year"] . '</h4>';
     echo '<br>';
     echo  '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
 }
