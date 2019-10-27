@@ -1,1 +1,1 @@
-<div> <?php getComic(); ?> </div>
+<div> <?php getComicStuff(); ?> </div>
