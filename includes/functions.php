@@ -74,7 +74,7 @@ function init()
 }
 
 function getComicStuff(){
-$url = 'http://xkcd.com/614/info.0.json';
+$url = 'http://xkcd.com/info.0.json';
 /**dont change
 */
 $handle = curl_init();
@@ -100,6 +100,8 @@ echo  '<div class="d-flex justify-content-center"> <img src = ' . $response["img
 function getRandomComic(){
 
     $randNum = rand(1,2208);
+    $url = 'https://xkcd.com/'. $randNum. '/'.'info.0.json';
+
 
     /**dont change
     */
