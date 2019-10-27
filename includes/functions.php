@@ -56,13 +56,24 @@ function page_content()
     if (! file_exists($path)) {
         $path = getcwd() . '/' . config('content_path') . '/404.php';
     }
-    echo file_get_contents($path);
+    /*echo file_get_contents($path);*/
+    require config('config_path'). $path;
 }
 
 /*
 Stuff
 */
-function getComicPicture(){
+
+/**
+ * Starts everything and displays the template.
+ */
+function init()
+{
+    require config('template_path') . '/template.php';
+
+}
+
+function getComicStuff(){
 $url = 'http://xkcd.com/614/info.0.json';
 /**dont change
 */
@@ -79,19 +90,38 @@ $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
-echo '<h2>' . $response["title"] . '</h2>';
+echo '<div><h2>' . $response["title"] . '</h2></div>';
 echo '<br>';
-echo '<h3>' . $response["year"] . '</h3>';
+echo '<h3>' . $response["year"] . '-' . $response["month"] . '-' . $response["day"]'</h3>';
 echo '<br>';
+echo  '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
+}
+
+function getRandomComic(){
+
+    $randNum = rand(1,2208);
+
+    /**dont change
+    */
+    $handle = curl_init();
+    curl_setopt($handle, CURLOPT_URL, $url);
+    curl_setopt_array($handle,
+    array(
+    CURLOPT_URL => $url,
+    CURLOPT_RETURNTRANSFER => true
+    )
+    );
+    $output = curl_exec($handle);
+    $response = json_decode($output, true);
+    curl_close($handle);
+    /*dont change
+    */
+    echo '<div><h2>' . $response["title"] . '</h2></div>';
+    echo '<br>';
+    echo '<h3>' . $response["year"] . '-' . $response["month"] . '-' . $response["day"]'</h3>';
+    echo '<br>';
+    echo  '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
 }
 
 
-
-/**
- * Starts everything and displays the template.
- */
-function init()
-{
-    require config('template_path') . '/template.php';
-}
 ?>
