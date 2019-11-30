@@ -37,7 +37,7 @@
         </ul>
         </div>
     </nav>
-    <div class="wrap">
+    <div class="containter">
     <?php page_content();?>
     </div>
     <!-- Optional JavaScript -->
