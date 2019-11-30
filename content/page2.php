@@ -1,4 +1,4 @@
-<div> <?php getRandomComic(); ?> </div>
+<div id="button-rand"><?php getRandomComic(); ?> </div>
 <br>
 <br>
-<button id="button-rand" class="btn btn-outline-primary">Get RandO ComicO</button>
+<button id="button" class="btn btn-outline-primary">Get RandO ComicO</button>
