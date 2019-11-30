@@ -1,3 +1,19 @@
+
+.jumbotron{
+
+    color:white;
+    text-align: center;
+    font-family: 'Aclonica';
+    background: black;
+    
+}
+.jumbotron-fluid{
+    border-radius: 15px;
+    border: white;
+    border-style: solid;
+    
+
+}
 .wrap {
     background-color: yellowgreen;
     color: white;
