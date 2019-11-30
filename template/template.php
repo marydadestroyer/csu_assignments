@@ -42,8 +42,8 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     
     <Script>
-    $("#button").click(funtion()
-    {
+    $("#button").click(funtion() {
+    
         $.ajax({
             type: 'post',  //whats your request type
             url: "../includes/functions.php",  // whats your php file
@@ -52,9 +52,9 @@
 
             }, //what data are you sending via JSON
             dataType:"HTML", // what type of data are you getting back
-            success: function(data)
+            success: function(result)
             {
-                $("#button-rand").html(data)
+                $("#buttonrand").html(result);
                     
             },
             error: function()
@@ -64,9 +64,7 @@
             }); 
             return false; 
         
-    });
-    
-    
-    </Script>
+         });
+    </script>
     </body>
 </html>
