@@ -7,11 +7,20 @@
     background: black;
     
 }
+h1{
+    text-align: center;
+    font-family: 'Aclonica';
+
+}
 .jumbotron-fluid{
     border-radius: 15px;
     border: white;
     border-style: solid;
     
+
+}
+.container{
+    text-align: center;
 
 }
 .wrap {
