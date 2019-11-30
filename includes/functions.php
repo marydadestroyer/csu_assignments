@@ -28,7 +28,7 @@ function site_version()
 /**
  * Website navigation.
  */
-function nav_menu()
+function nav_menu($sep ='&nbsp')
 {
     $nav_menu = '';
     $nav_items = config('nav_menu');
@@ -40,9 +40,9 @@ function nav_menu()
         }
 
         $url = config('site_url') . '/' . (config('pretty_uri') || $uri == '' ? '' : '?page=') . $uri;
-        $nav_menu .= '<a href="' . $url . '" title="' . $name . '" class="item ' . $class . '">' . $name . '</a>';
+        $nav_menu .= '<a href="' . $url . '" title="' . $name . '" class="item ' . $class . '">' . $name . '</a>'. $sep;
     }
-    echo trim($nav_menu);
+    echo trim($nav_menu,$sep);
 }
 
 /**
