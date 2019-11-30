@@ -100,7 +100,7 @@ function getComicStuff($url){
     /*dont change
     */
     echo '<h4>Title: ' . $response['title'] . '</h4><br>';
-    echo '<h4>' . $response['year'] . '*' . $response['day'] . '/'. $response["year"] . '</h4><br>';
+    echo '<h4>' . $response['month'] . '/' . $response['day'] . '/'. $response["year"] . '</h4><br>';
     echo  '<img src = ' . $response["img"] .'></div>';
 }
 
