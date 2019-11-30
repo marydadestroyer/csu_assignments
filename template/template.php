@@ -40,5 +40,33 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <Script>
+    $("#button").click(funtion()
+    {
+        $.ajax({
+            type: 'post',  //whats your request type
+            url: "../includes/functions.php",  // whats your php file
+            data: {
+                "random": true
+
+            }, //what data are you sending via JSON
+            dataType:"HTML", // what type of data are you getting back
+            success: function(data)
+            {
+                $("#buntton-rand").html(data)
+                    
+            },
+            error: function()
+            {
+                alert("NO, not here");
+            }
+            }); 
+            return false; 
+        
+    });
+    
+    
+    </Script>
     </body>
 </html>
