@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <div class="wrap">
+  
   <head>
   
 
@@ -37,9 +37,9 @@
         </ul>
         </div>
     </nav>
-
+    <div class="wrap">
     <?php page_content();?>
-
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     
@@ -63,5 +63,5 @@
         });
     </script>
     </body>
-    </div>
+    
 </html>
