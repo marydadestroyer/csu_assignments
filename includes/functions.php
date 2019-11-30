@@ -71,7 +71,7 @@ function init()
 }
 
 function getComicStuff(){
-$url = 'http://xkcd.com/info.0.json';
+
 /**dont change
 */
 $handle = curl_init();
@@ -87,8 +87,7 @@ $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
-echo '<div><h2>' . $response["title"] . '</h2></div>';
-echo '<br>';
+echo '<h2>Title--> ' . $response["title"] . '</h2><br>';
 echo '<h4>' . $response["month"] . '*' . $response["day"] . '/'. $response["year"] . '</h4>';
 echo  '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
 }
