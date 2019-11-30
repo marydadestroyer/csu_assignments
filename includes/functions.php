@@ -1,4 +1,10 @@
 <?php
+
+if (isset ($_POST['random'])){
+    getRandomComic();
+} else{
+    echo 'fail';
+};
 /**
  * Displays site name.
  */
@@ -78,24 +84,24 @@ function init()
 
 function getComicStuff($url){
 
-/**dont change
-*/
-$handle = curl_init();
-curl_setopt($handle, CURLOPT_URL, $url);
-curl_setopt_array($handle,
-array(
-CURLOPT_URL => $url,
-CURLOPT_RETURNTRANSFER => true
-)
-);
-$output = curl_exec($handle);
-$response = json_decode($output, true);
-curl_close($handle);
-/*dont change
-*/
-echo '<h4>' . $response['title'] . '</h4><br>';
-echo '<h4>' . $response['year'] . '*' . $response['day'] . '/'. $response["year"] . '</h4><br>';
-echo  '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
+    /**dont change
+    */
+    $handle = curl_init();
+    curl_setopt($handle, CURLOPT_URL, $url);
+    curl_setopt_array($handle,
+    array(
+    CURLOPT_URL => $url,
+    CURLOPT_RETURNTRANSFER => true
+    )   
+    );
+    $output = curl_exec($handle);
+    $response = json_decode($output, true);
+    curl_close($handle);
+    /*dont change
+    */
+    echo '<h4>' . $response['title'] . '</h4><br>';
+    echo '<h4>' . $response['year'] . '*' . $response['day'] . '/'. $response["year"] . '</h4><br>';
+    echo  '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
 }
 
 function getThisComic()
@@ -108,28 +114,9 @@ function getRandomComic(){
 
     $randNum = rand(1,2208);
     $url = 'https://xkcd.com/'. $randNum. '/'.'info.0.json';
+    getComicStuff($url);
 
 
-    /**dont change
-    */
-    $handle = curl_init();
-    curl_setopt($handle, CURLOPT_URL, $url);
-    curl_setopt_array($handle,
-    array(
-    CURLOPT_URL => $url,
-    CURLOPT_RETURNTRANSFER => true
-    )
-    );
-    $output = curl_exec($handle);
-    $response = json_decode($output, true);
-    curl_close($handle);
-    /*dont change
-    */
-    echo '<div><h2>' . $response["title"] . '</h2></div>';
-    echo '<br>';
-    echo '<h4>' . $response["month"] . '/' . $response["day"] . '/'. $response["year"] . '</h4>';
-    echo '<br>';
-    echo  '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
 }
 
 
