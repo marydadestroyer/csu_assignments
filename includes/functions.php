@@ -98,6 +98,12 @@ echo '<h4>' . $response['year'] . '*' . $response['day'] . '/'. $response["year"
 echo  '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
 }
 
+function getThisComic()
+{
+    $url = "https://xkcd.com/info.0.json";
+    getComicStuff($url);
+}
+
 function getRandomComic(){
 
     $randNum = rand(1,2208);
