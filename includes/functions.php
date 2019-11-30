@@ -2,8 +2,7 @@
 
 if (isset ($_POST['random'])){
     getRandomComic();
-} else{
-    echo 'fail in some in way';
+
 };
 /**
  * Displays site name.

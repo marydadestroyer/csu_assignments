@@ -45,26 +45,26 @@
     $("#button").click(funtion() {
     
         $.ajax({
-            type: 'post',  //whats your request type
-            url: "../includes/functions.php",  // whats your php file
+            type: 'post',  
+            url: "../includes/functions.php",  
             data: {
                 "random": true
 
-            }, //what data are you sending via JSON
+            }, 
             dataType:"HTML", // what type of data are you getting back
             success: function(result)
             {
-                $("#buttonrand").html(result);
+                $("#rand").html(result);
                     
             },
             error: function()
             {
                 alert("NO, not here");
             }
-            }); 
-            return false; 
+         }); 
+        return false; 
         
-         });
+     });
     </script>
     </body>
 </html>
