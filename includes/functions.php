@@ -87,8 +87,8 @@ $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
-echo '<h2>Title--> ' . $response["title"] . '</h2><br>';
-echo '<h4>' . $response["month"] . '*' . $response["day"] . '/'. $response["year"] . '</h4>';
+echo '<h4>' . $response['title'] . '</h4><br>';
+echo '<h4>' . $response['year'] . '*' . $response['day'] . '/'. $response["year"] . '</h4><br>';
 echo  '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
 }
 
