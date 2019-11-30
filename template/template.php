@@ -41,30 +41,24 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     
-    <Script>
-    $("#button").click(funtion() {
-    
-        $.ajax({
-            type: 'post',  
-            url: "../includes/functions.php",  
-            data: {
-                "random": true
-
-            }, 
-            dataType:"HTML", // what type of data are you getting back
-            success: function(result)
-            {
-                $("#rand").html(result);
-                    
-            },
-            error: function()
-            {
-                alert("NO, not here");
-            }
-         }); 
-        return false; 
-        
-     });
+    <script>
+     $("#button").click(function() {
+            $.ajax({
+                type: 'post',
+                url: '../includes/functions.php',
+                data: {
+                    "random": true
+                },
+                dataType: "HTML",
+                success: function(result) {
+                    $("#rand").html(result);
+                },
+                error: function() {
+                    alert("Failed to get comic!");
+                }
+            });
+            return false;
+        });
     </script>
     </body>
 </html>
