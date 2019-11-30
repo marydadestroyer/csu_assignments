@@ -70,7 +70,7 @@ function init()
 
 }
 
-function getComicStuff(){
+function getComicStuff($url){
 
 /**dont change
 */
