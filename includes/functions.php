@@ -68,8 +68,8 @@ function page_content()
     if (! file_exists($path)) {
         $path = getcwd() . '/' . config('content_path') . '/404.php';
     }
-    /*echo file_get_contents($path);*/
-    require config('config_path'). $path;
+    echo file_get_contents($path);
+    /*require config('config_path'). $path;*/
 }
 
 
@@ -101,7 +101,7 @@ function getComicStuff($url){
     */
     echo '<h4>' . $response['title'] . '</h4><br>';
     echo '<h4>' . $response['year'] . '*' . $response['day'] . '/'. $response["year"] . '</h4><br>';
-    echo  '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
+    echo  '<img src = ' . $response["img"] .'></div>';
 }
 
 function getThisComic()
