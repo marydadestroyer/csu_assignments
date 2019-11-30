@@ -54,7 +54,7 @@
             dataType:"HTML", // what type of data are you getting back
             success: function(data)
             {
-                $("#buntton-rand").html(data)
+                $("#button-rand").html(data)
                     
             },
             error: function()
