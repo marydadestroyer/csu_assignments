@@ -1,1 +1,3 @@
-<div class ="this"> <?php getThisComic(); ?> </div>
+<div class="center">
+<div> <?php getThisComic(); ?> </div>
+</div>
