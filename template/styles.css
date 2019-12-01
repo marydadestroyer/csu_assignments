@@ -6,6 +6,14 @@
     background: black;
     
 }
+.jumbotron-fluid{
+    border-radius: 15px;
+    border: white;
+    border-style: solid;
+    
+
+}
+
 
 h1{
     text-align: center;
