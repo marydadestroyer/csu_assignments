@@ -22,7 +22,11 @@
 
 
 
-    <div class="jumbotron"> <h1>Comics?</h1> </div>
+    <div class="jumbotron jumbotron fluid">
+    <div class= 'container'>
+     <h1>Comics?</h1> 
+     </div>
+     </div>
      <title><?php site_name(); ?></title>
         </head>
         <body>
@@ -36,6 +40,7 @@
          <?php  nav_menu(); ?>
         </ul>
         </div>
+
     </nav>
     <div class="containter">
     <?php page_content();?>
