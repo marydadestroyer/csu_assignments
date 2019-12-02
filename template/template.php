@@ -22,17 +22,20 @@
 
 
 
-    <div class="jumbotron jumbotron fluid">
-   
-     <h1 class="display-4">Comics?</h1> 
-     <h3 class="lead">Here they are!</h3>
-     </div>
+    
      
 
      <title><?php site_name(); ?></title>
         </head>
+
         <body>
         <div class="container">
+
+        <div class="jumbotron jumbotron fluid">
+        <h1 class="display-4">Comics?</h1> 
+        <h3 class="lead">Here they are!</h3>
+        </div>
+
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
          <a class="navbar-brand navbar-collapse" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
