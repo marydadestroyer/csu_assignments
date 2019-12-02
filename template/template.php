@@ -23,11 +23,11 @@
 
 
     <div class="jumbotron jumbotron fluid">
-    <div class= 'container'>
+   
      <h1 class="display-4">Comics?</h1> 
      <h3 class="lead">Here they are!</h3>
      </div>
-     </div>
+     
 
      <title><?php site_name(); ?></title>
         </head>
