@@ -32,7 +32,7 @@
         <div class="d-flex justify-content-center">
         <div class="container">
 
-        <div class="jumbotron jumbotron fluid">
+        <div class="jumbotron jumbotron fluid d-flex justify-content-center">
         <h1 class="display-4">Comics?</h1> 
         <h3 class="lead">Here they are!</h3>
         </div>
