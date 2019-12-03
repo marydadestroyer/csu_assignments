@@ -29,6 +29,7 @@
         </head>
 
         <body>
+        <div class="d-flex justify-content-center">
         <div class="container">
 
         <div class="jumbotron jumbotron fluid">
@@ -74,6 +75,7 @@
         });
     </script>
     </div>
+    </div class="d-flex justify-content-center">
     </body>
     
 </html>

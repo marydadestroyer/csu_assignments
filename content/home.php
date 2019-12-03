@@ -1,3 +1,3 @@
-<div class="center">
+<div class="d-flex justify-content-center">
 <div> <?php getThisComic(); ?> </div>
-</div>
+</div class="d-flex justify-content-center">
