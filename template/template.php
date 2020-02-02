@@ -33,8 +33,9 @@
         <div class="container">
 
         <div class="jumbotron jumbotron fluid d-flex justify-content-center">
-        <h1 class="display-4">Comics?</h1> 
-        <h3 class="lead">Here they are!</h3>
+        <h1 class="display-4">Team Oasis</h1> 
+        <h2 class="display-4">J Balvin + Bad Bunny</h2> 
+        <h3 class="lead">legendary beats</h3>
         </div>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
