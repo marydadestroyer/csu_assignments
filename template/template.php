@@ -37,7 +37,7 @@
         <br>&nbsp &nbsp</br>
         <h2 class="display-5">J Balvin + Bad Bunny</h2> 
         <br>&nbsp &nbsp</br>
-        <h3 class="lead">legendary beats</h3>
+        <h3 class="lead"><i>legendary beats</i></h3>
         </div>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
