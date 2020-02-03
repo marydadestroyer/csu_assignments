@@ -1,3 +1,5 @@
 <div class="d-flex justify-content-center">
-<div> <?php getThisComic(); ?> </div>
+<h1>Learning go</h1>
+
+<p> Things and stuff</p>
 </div class="d-flex justify-content-center">

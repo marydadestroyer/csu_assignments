@@ -12,7 +12,7 @@ function config($key = '')
         'site_url' => 'https://assignment2csu.herokuapp.com',
         'nav_menu' => [
             '' => 'Home',
-            'page2' => 'More Comics'
+            'page2' => 'More Stuff'
 
         ],
         'template_path' => 'template',

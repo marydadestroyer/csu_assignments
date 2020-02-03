@@ -34,7 +34,8 @@
 
         <div class="jumbotron jumbotron fluid d-flex justify-content-center">
         <h1 class="display-4">Team Oasis</h1> 
-        <h2 class="display-4">J Balvin + Bad Bunny</h2> 
+        <br>
+        <h2 class="display-5">J Balvin + Bad Bunny</h2> 
         <h3 class="lead">legendary beats</h3>
         </div>
 
