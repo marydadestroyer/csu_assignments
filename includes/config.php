@@ -7,11 +7,11 @@
 function config($key = '')
 {
     $config = [
-        'name' => 'Assignment 2',
+        'name' => 'Programing in Go',
         'pretty_uri' => false,
         'site_url' => 'https://assignment2csu.herokuapp.com',
         'nav_menu' => [
-            '' => 'Comic Home',
+            '' => 'Home',
             'page2' => 'More Comics'
 
         ],
