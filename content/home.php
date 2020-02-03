@@ -2,9 +2,9 @@
 <h3>Maidel Fletes and Mary Harrell</h3>
 <br>
 <br>
-<p>
+
 <img src= "gopkg.png" alt="go image">
-</p>
+
 <br>
 <br>
 <p>
