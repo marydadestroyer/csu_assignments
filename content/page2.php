@@ -1,7 +1,8 @@
 <div class="d-flex justify-content-center">
 <br>
-<h2> Maidel Fletes <br>and<br> Mary Harrell</h2>
 <p> <br>created by</p>
+<h2> Maidel Fletes <br>and<br> Mary Harrell</h2>
+
 <br>
 <br>
 
